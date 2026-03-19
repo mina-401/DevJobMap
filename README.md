@@ -13,9 +13,18 @@
 
 ---
 
+
+
+---
+
 ## 서비스 미리보기
 
+### 미리보기
 미첨부
+
+### 배포 링크
+
+[DevJobMap 바로가기](https://mina-401.github.io/DevJobMap/)
 
 ---
 
