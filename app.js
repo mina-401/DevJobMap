@@ -13,14 +13,14 @@ var CompanyMap = {
     expFilter: 'all',       // 'all' | '신입' | '1-3' | '3+' | '5+'
 
     init: function() {
-        // ✅ 1. 지도를 즉시 기본 위치(서울)로 먼저 렌더링
+        // 1. 지도를 즉시 기본 위치(서울)로 먼저 렌더링
         this.lat = 37.5665;
         this.lng = 126.9780;
         this.initMap();
         this.addCircle();
         this.showMapLoading(true);  // 로딩 오버레이 표시
 
-        // ✅ 2. 위치 요청 — 응답 오면 실제 위치로 업데이트
+        // 2. 위치 요청 — 응답 오면 실제 위치로 업데이트
         navigator.geolocation.getCurrentPosition(
             this.onLocation.bind(this),
             this.onError.bind(this),
@@ -29,7 +29,7 @@ var CompanyMap = {
         this.bindFilters();
     },
 
-    // ✅ 로딩 오버레이 표시/숨김
+    // 로딩 오버레이 표시/숨김
     showMapLoading: function(show) {
         var overlay = document.getElementById('map-loading');
         if (overlay) overlay.style.display = show ? 'flex' : 'none';
@@ -49,7 +49,7 @@ var CompanyMap = {
         this.addMyMarker();
         this.circle.setLatLng([this.lat, this.lng]);
 
-        // ✅ flyTo 종료(moveend) 후 map.distance()로 정확한 거리 재계산
+        // flyTo 종료(moveend) 후 map.distance()로 정확한 거리 재계산
         var self = this;
 
         // flyTo는 zoom+이동을 동시에 수행하므로
@@ -149,10 +149,7 @@ var CompanyMap = {
             // 특정 거리 선택 시 원 표시 + 반경 업데이트
             this.circle.setStyle({ opacity: 1, fillOpacity: 0.05 });
             this.circle.setRadius(radius);
-            this.map.flyToBounds(this.circle.getBounds(), {
-                padding: [40, 40],
-                duration: 0.5
-            });
+
         }
     },
 
