@@ -31,6 +31,15 @@
 
 ---
 
+### 검색 
+> 회사명, 직무, 기술 기반 검색 기능으로 필터링 합니다.
+
+<p align="center">
+  <img src="Screenshots/navbar.png" width="100%"/>
+</p>
+
+---
+
 ### 필터링 & 거리 탐색
 > 거리 슬라이더, 연봉, 고용형태, 경력, 업종을 조합해 원하는 공고를 좁힙니다.
 > 필터 적용 시 지도 반경과 리스트가 **실시간으로 함께 업데이트**됩니다.
@@ -44,11 +53,9 @@
 
 ### 📄 지도 + 리스트 뷰
 > 지도와 리스트를 함께 제공하여 다양한 방식으로 탐색합니다.  
-> 거리순 정렬을 통해 가까운 공고를 우선적으로 확인합니다.
 
 <p align="center">
-  <img src="Screenshots/map.png" width="49%"/>
-  <img src="Screenshots/list.png" width="49%"/>
+  <img src="Screenshots/list.png" width="100%"/>
 </p>
 
 ---
