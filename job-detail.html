@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Index.css"/>
+<title>채용 상세 - 잡맵</title>
+<style>
+.badge-list { display:flex; flex-wrap:wrap; gap:8px; }
+.badge-item {
+  display:inline-flex; align-items:center; gap:5px;
+  padding:5px 12px; border-radius:20px;
+  font-size:13px; font-weight:500;
+  background:#f3f4f6; color:#374151;
+  border:1px solid #e5e7eb;
+}
+.badge-item.work { background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe; }
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="navbar-content">
+    <div class="logo-container">
+      <img src="Assets/MapIcon.png" alt="잡맵 로고" class="logo"/>
+      <span class="logo-text">잡<span>맵</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">지도</a>
+      <a href="jobs.html" class="nav-link">채용리스트</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-outline">로그인</button>
+      <button class="btn-primary">이력서 등록</button>
+    </div>
+  </div>
+</nav>
+
+<div class="detail-wrapper">
+  <div class="detail-container">
+    <div class="detail-main">
+      <div class="detail-company-header">
+        <div class="detail-logo" id="detail-logo">🏢</div>
+        <div>
+          <div class="detail-company-name" id="detail-company-name">회사명</div>
+          <div class="detail-position" id="detail-position">포지션</div>
+          <span class="detail-type" id="detail-type">정규직</span>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <div class="detail-section-title">채용 정보</div>
+        <table class="detail-table">
+          <tr><th>경력</th><td id="detail-experience">-</td></tr>
+          <tr><th>학력</th><td id="detail-education">-</td></tr>
+          <tr><th>급여</th><td id="detail-salary" style="color:var(--primary);font-weight:700">-</td></tr>
+          <tr><th>마감일</th><td id="detail-deadline">-</td></tr>
+          <tr><th>근무지</th><td id="detail-address">-</td></tr>
+          <tr><th>직원수</th><td id="detail-employees">-</td></tr>
+        </table>
+      </div>
+
+      <!-- 근무 방식 -->
+      <div class="detail-section">
+        <div class="detail-section-title">근무 방식</div>
+        <div class="badge-list" id="detail-work-style"></div>
+      </div>
+
+      <!-- 복지 혜택 -->
+      <div class="detail-section">
+        <div class="detail-section-title">복지 혜택</div>
+        <div class="badge-list" id="detail-welfare"></div>
+      </div>
+
+      <div class="detail-section">
+        <div class="detail-section-title">기술스택 및 태그</div>
+        <div class="detail-tags" id="detail-tags"></div>
+      </div>
+
+      <div class="detail-section">
+        <div class="detail-section-title">업무 내용</div>
+        <div id="detail-description" style="font-size:14px;color:var(--text-2);line-height:1.8"></div>
+      </div>
+    </div>
+
+    <div class="detail-sidebar">
+      <div class="apply-card">
+        <div class="apply-salary">연봉</div>
+        <div class="apply-salary-amount" id="sidebar-salary">-</div>
+        <button class="apply-btn">지원하기</button>
+        <button class="save-btn-detail">북마크</button>
+      </div>
+      <div class="contact-card">
+        <div class="contact-title">채용 담당자</div>
+        <div class="contact-item">recruit@company.com</div>
+        <div class="contact-item">02-1234-5678</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="job-detail.js"></script>
+</body>
+</html>
