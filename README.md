@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>내 위치 기반으로 주변 채용공고를 지도에서 탐색하는 웹 서비스</b><br>
-  <sub>※ 개발 전용</sub>
+  <sub>※ 개발자 전용</sub>
 </p>
 
 <p align="center">
