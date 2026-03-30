@@ -1,0 +1,26 @@
+{
+  "name": "devjobmap",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <b>내 위치 기반으로 주변 채용공고를 지도에서 탐색하는 웹 서비스</b><br>\r   <sub>※ 개발자 전용</sub>\r </p>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mina-401/DevJobMap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mina-401/DevJobMap/issues"
+  },
+  "homepage": "https://github.com/mina-401/DevJobMap#readme",
+  "dependencies": {
+    "axios": "^1.14.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
